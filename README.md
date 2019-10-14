@@ -1,6 +1,6 @@
 # SalesforceLiteConnection
 
-it is a library that wraps Salesforce CRUD rest api. it is meant to be used in apps that require a one time connection to Salesforce.
+it is a promise based library that wraps Salesforce CRUD rest api. it is meant to be used in apps that require a one time connection to Salesforce.
 SalesforceLiteConnection uses the Username-Password OAuth Authentication Flow.
 
 ## Requirements
@@ -19,15 +19,20 @@ SalesforceLiteConnection uses the Username-Password OAuth Authentication Flow.
 
 ## API
 
-##### Promise<SalesforceConnection> SalesforceLiteConnection.createConnection(params)
+##### SalesforceLiteConnection.createConnection(params)
 
-Creates a connection to a salesforce org specify the params;
+Creates a connection to a salesforce org specify the params
 
-*Parameters*
+###### Parameters
 
-_params_
-
+**params**
 Information about the  where to connect
+
+**return**
+
+Promise (that resolves in an instance of SalesforceConnection);
+
+**Example**
 
 ```javascript
 const SalesforceLiteConnection = require('salesforceLiteConnection');
