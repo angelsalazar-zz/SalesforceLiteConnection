@@ -16,7 +16,7 @@ SalesforceLiteConnection uses the Username-Password OAuth Authentication Flow as
 
 ## Installation
 
-`npm install salesforceLiteConnection`
+`npm install salesforceliteconnection`
 
 ## API
 
@@ -36,7 +36,7 @@ Promise (it resolves into an instance of SalesforceConnection);
 **Example**
 
 ```javascript
-const SalesforceLiteConnection = require('salesforceLiteConnection');
+const SalesforceLiteConnection = require('salesforceliteconnection');
 
 SalesforceLiteConnection.createConnection({
   clientId: 'CONNECTED_APP_ID',                         // Required
@@ -73,7 +73,7 @@ Promise (for more info the response body see https://developer.salesforce.com/do
 
 ```javascript
 
-const { createConnection } = require('salesforceLiteConnection');
+const { createConnection } = require('salesforceliteconnection');
 
 createConnection(authInfo)
   .then(conn => {
@@ -101,7 +101,7 @@ Promise (for more info the response body see https://developer.salesforce.com/do
 
 ```javascript
 
-const { createConnection } = require('salesforceLiteConnection');
+const { createConnection } = require('salesforceliteconnection');
 
 createConnection(authInfo)
   .then(conn => {
@@ -132,7 +132,7 @@ Promise (for more info the response body see https://developer.salesforce.com/do
 
 ```javascript
 
-const { createConnection } = require('salesforceLiteConnection');
+const { createConnection } = require('salesforceliteconnection');
 
 createConnection(authInfo)
   .then(conn => {
@@ -162,7 +162,7 @@ Promise (for more info the response body see https://developer.salesforce.com/do
 
 ```javascript
 
-const { createConnection } = require('salesforceLiteConnection');
+const { createConnection } = require('salesforceliteconnection');
 
 createConnection(authInfo)
   .then(conn => {
@@ -193,7 +193,7 @@ Promise (for more info the response body see https://developer.salesforce.com/do
 
 ```javascript
 
-const { createConnection } = require('salesforceLiteConnection');
+const { createConnection } = require('salesforceliteconnection');
 
 createConnection(authInfo)
   .then(conn => {
@@ -228,7 +228,7 @@ Promise (for more info the response body see https://developer.salesforce.com/do
 
 ```javascript
 
-const { createConnection } = require('salesforceLiteConnection');
+const { createConnection } = require('salesforceliteconnection');
 
 createConnection(authInfo)
   .then(conn => {
@@ -263,7 +263,7 @@ Promise (for more info the response body see https://developer.salesforce.com/do
 
 ```javascript
 
-const { createConnection } = require('salesforceLiteConnection');
+const { createConnection } = require('salesforceliteconnection');
 
 createConnection(authInfo)
   .then(conn => {
@@ -297,7 +297,7 @@ Promise (for more info the response body see https://developer.salesforce.com/do
 
 ```javascript
 
-const { createConnection } = require('salesforceLiteConnection');
+const { createConnection } = require('salesforceliteconnection');
 
 createConnection(authInfo)
   .then(conn => {
