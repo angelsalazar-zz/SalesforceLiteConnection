@@ -19,14 +19,13 @@ SalesforceLiteConnection uses the Username-Password OAuth Authentication Flow.
 
 ## API
 
-##### SalesforceLiteConnection.createConnection(params)
+##### SalesforceLiteConnection.createConnection(authInfo)
 
 Creates a connection to a salesforce org specify the params
 
-###### Parameters
+**Params**
 
-**params**
-Information about the  where to connect
+1. authInfo specifies the information about where to connect
 
 **return**
 
