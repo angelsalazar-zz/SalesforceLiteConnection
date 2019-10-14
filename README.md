@@ -22,8 +22,9 @@ SalesforceLiteConnection uses the Username-Password OAuth Authentication Flow as
 
 ## API
 
-### SalesforceLiteConnection.createConnection(authInfo)
+### SalesforceLiteConnection
 
+#### createConnection(authInfo)
 Creates a connection to a salesforce org specify the params
 
 **Parameters**
