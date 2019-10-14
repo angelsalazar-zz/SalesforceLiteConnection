@@ -171,7 +171,7 @@ class SalesforceConnection {
    * @param  {Array}  compositeRequest [Collection of subrequests to execute.]
    * @param  {Boolean} allOrNone        [indicates whether to roll back the entire request
    * when the creation of any object fails (true) or to continue with the independent creation of other objects in the request]
-   * @return {[type]}                   [https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_composite.htm]
+   * @return {Promise}                   [https://developer.salesforce.com/docs/atlas.en-us.api_rest.meta/api_rest/resources_composite_composite.htm]
    */
   composite(compositeRequest, allOrNone = true) {
     assert(compositeRequest, 'compositeRequest are required');
