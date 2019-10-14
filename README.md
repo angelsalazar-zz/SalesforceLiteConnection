@@ -1,7 +1,7 @@
 # SalesforceLiteConnection
 
 it is a promise based library that wraps Salesforce CRUD rest api. it is meant to be used in apps that require a one time connection to Salesforce.
-SalesforceLiteConnection uses the Username-Password OAuth Authentication Flow.
+SalesforceLiteConnection uses the Username-Password OAuth Authentication Flow as.
 
 ## Requirements
 
@@ -22,7 +22,7 @@ SalesforceLiteConnection uses the Username-Password OAuth Authentication Flow.
 
 ## API
 
-##### SalesforceLiteConnection.createConnection(authInfo)
+### SalesforceLiteConnection.createConnection(authInfo)
 
 Creates a connection to a salesforce org specify the params
 
@@ -56,9 +56,9 @@ SalesforceLiteConnection.createConnection({
 });
 ```
 
-##### SalesforceConnection
+### SalesforceConnection
 
-###### query(soql)
+#### query(soql)
 
 Executes the given soql string.
 
@@ -85,7 +85,7 @@ createConnection(authInfo)
   });
 ```
 
-###### insert(sobjectApiName, fieldsToSet)
+#### insert(sobjectApiName, fieldsToSet)
 
 Inserts a record.
 
@@ -115,7 +115,7 @@ createConnection(authInfo)
   });
 ```
 
-###### update(sobjectApiName, recordId, fieldsToUpdate)
+#### update(sobjectApiName, recordId, fieldsToUpdate)
 
 Updates a record.
 
@@ -146,7 +146,7 @@ createConnection(authInfo)
   });
 ```
 
-###### delete(sobjectApiName, recordId)
+#### delete(sobjectApiName, recordId)
 
 Deletes a record.
 
@@ -176,7 +176,7 @@ createConnection(authInfo)
   });
 ```
 
-###### bulkInsert(sobjectApiName, records, allOrNone)
+#### bulkInsert(sobjectApiName, records, allOrNone)
 
 Inserts a collection of records (up to 200 records).
 
@@ -211,7 +211,7 @@ createConnection(authInfo)
   });
 ```
 
-###### bulkUpdate(sobjectApiName, records, allOrNone)
+#### bulkUpdate(sobjectApiName, records, allOrNone)
 
 Updates a collection of records (up to 200 records).
 
@@ -246,7 +246,7 @@ createConnection(authInfo)
   });
 ```
 
-###### bulkDelete(sobjectApiName, recordIds, allOrNone)
+#### bulkDelete(sobjectApiName, recordIds, allOrNone)
 
 Updates a collection of records (up to 200 records).
 
@@ -281,7 +281,7 @@ createConnection(authInfo)
   });
 ```
 
-###### composite(compositeRequest, allOrNone)
+#### composite(compositeRequest, allOrNone)
 
 Updates a collection of records (up to 200 records).
 
