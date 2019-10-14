@@ -16,9 +16,7 @@ SalesforceLiteConnection uses the Username-Password OAuth Authentication Flow as
 
 ## Installation
 
-`npm install salesforceLiteConnection` or
-
-`yarn add salesforceLiteConnection`
+`npm install salesforceLiteConnection`
 
 ## API
 
