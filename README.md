@@ -1,5 +1,8 @@
 # SalesforceLiteConnection
 
+![license](https://img.shields.io/github/license/angelsalazar/SalesforceLiteConnection)
+![size](https://img.shields.io/github/repo-size/angelsalazar/SalesforceLiteConnection)
+
 it is a promise based library that wraps Salesforce CRUD rest api. it is meant to be used in apps that require a one time connection to Salesforce.
 SalesforceLiteConnection uses the Username-Password OAuth Authentication Flow as.
 
