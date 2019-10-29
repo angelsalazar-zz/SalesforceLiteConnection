@@ -250,7 +250,7 @@ createConnection(authInfo)
 
 #### bulkDelete(sobjectApiName, recordIds, allOrNone)
 
-Updates a collection of records (up to 200 records).
+Deletes a collection of records (up to 200 records).
 
 **Parameters**
 
@@ -270,13 +270,7 @@ const { createConnection } = require('salesforceliteconnection');
 
 createConnection(authInfo)
   .then(conn => {
-    return conn.bulkUpdate('Contact', [{
-      Id: '001xx000003DGb2AAG',
-      Title: 'Lead Engineer'
-    }, {
-      Id: '003xx000004TmiQAAS',
-      Title: 'UI Designer'
-    }])
+    return conn.bulkDelete('Contact', ['001xx000003DGb2AAG', '003xx000004TmiQAAS'])
   })
   .then((data) => {
     console.log(data);
@@ -285,11 +279,11 @@ createConnection(authInfo)
 
 #### composite(compositeRequest, allOrNone)
 
-Updates a collection of records (up to 200 records).
+Executes a series of REST API requests in a single call.
 
 **Parameters**
 
-* *recordIds* `array` Collection of subrequests to execute
+* *compositeRequest* `array` Collection of subrequests to execute
 * *allOrNone* `boolean` Indicates whether to roll back the entire request when an error occurs while processing a subrequest (default true).
 
 **Return**
